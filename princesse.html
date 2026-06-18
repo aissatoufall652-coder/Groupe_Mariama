@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>inscription</title>
+
+    <!-- CSS inclus directement dans le HTML -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: seashell ;
+        }
+
+        form {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5dc
+    ;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            position: center;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: rosybrown;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: seashell;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="#" method="post">
+    <h2>inscription</h2>
+
+    <label>Prénom</label>
+    <input type="text" name="prenom" required>
+
+    <label>Nom</label>
+    <input type="text" name="nom" required>
+
+    <label>Login</label>
+    <input type="text" name="login" required>
+
+    <label>Mot de passe</label>
+    <input type="password" name="password" required>
+
+    <label>Profil</label>
+    <select name="profil" required>
+        <option value="">-- Choisir --</option>
+        <option value="etudiant">Étudiant</option>
+        <option value="secretaire">Secrétaire</option>
+        <option value="administrateur">Administrateur</option>
+    </select>
+
+    <label>Sexe</label>
+    <select name="sexe" required>
+        <option value="">-- Choisir --</option>
+        <option value="feminin">Féminin</option>
+        <option value="masculin">Masculin</option>
+    </select>
+
+    <label>Nationalité</label>
+    <select name="nationalite" required>
+        <option value="">-- Choisir --</option>
+        <option value="senegalaise">Sénégalaise</option>
+        <option value="malienne">Malienne</option>
+        <option value="ivoirienne">Ivoirienne</option>
+        <option value="autre">Autre</option>
+    </select>
+
+    <button type="submit">Enregistrer</button>
+</form>
+
+</body>
+</html>
