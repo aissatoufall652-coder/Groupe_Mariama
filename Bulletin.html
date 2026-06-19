@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin</title>
+    <style>
+        body{
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFDD0;
+    display: flex;
+    align-items: center;
+    height:110vh;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30vw;
+    background-color:#D2691E;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 29vw;
+    border-radius: 7px;
+    margin-left: 0cm;   
+}
+
+select{
+    padding: 5px;
+    width: 29vw;
+    border-radius: 7px;
+    margin-left: 0cm;
+}
+
+.ko{
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 29vw;
+    border-radius: 7px;
+    margin-left: 0cm;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+table{  
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;  
+}
+
+th, td {
+    border: 1px solid black;        
+}
+
+th {
+    background-color: #D2691E;
+    color: black;
+    padding: 10px;
+}
+
+</style>
+</head>
+<body>
+    <form action="">
+        
+    
+    
+        <h1>BULLETIN</h1>
+    <hr color="black" width="100%">
+        <div><label for="">Matricule</label> 
+        <input type="text" placeholder="" name="matricule" id="matricule" required> <br></div>
+        <div><label for="">Prénom</label>
+        <input type="text" placeholder="" name="prenom" required> <br></div>
+        <div><label for="">Nom</label> 
+        <input type="text" placeholder="" name="nom" id="nom" required> <br></div>
+        <div><label>Filière</label>
+    <select name="filière" required>
+        <option value="">-- Choisir --</option>
+        <option value="etudiant">Droit</option>
+        <option value="secretaire">Management</option>
+        <option value="administrateur">Ingénierie</option>
+        <option value="etudiant">Art</option>
+        <option value="etudiant">Finance</option>
+        <option value="etudiant">GRH</option>
+        <option value="etudiant">Comptabilité</option> 
+    </select> <br></div>
+    <div><br><label>Niveau</label>
+    <select name="niveau" required>
+        <option value="">-- Choisir --</option>
+        <option value="etudiant">Licence 1</option>
+        <option value="secretaire">Licence 2</option>
+        <option value="administrateur">Licence 3</option>
+        <option value="etudiant">Master 1</option>
+        <option value="etudiant">Master 2</option>
+    </select> <br><br></div>
+       <div> <table
+    cellspacing="0" 
+    border="1px" 
+    width="50%" 
+        <tr>
+            <th>Modules</th>
+            <th>Devoir</th>
+            <th>Examen</th>
+            <th>Moyenne</th>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>12</td>
+            <td>15</td>
+            <td>13,5</td>
+        </tr> 
+        <tr>
+            <td>Français</td>
+            <td>18</td>
+            <td>13</td>
+            <td>15,5</td>
+        </tr>
+        <tr>
+            <td>Anglais</td>
+            <td>14</td>
+            <td>16,5</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Droit</td>
+            <td>10</td>
+            <td>14</td>
+            <td>12</td>
+        </tr> 
+    </table> </div>
+        <br><input type="submit" value="VALIDER" class="ko" align="center">
+    
+    </form>
+</body>
+</html>
